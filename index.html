@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/foto.jpg"
+              alt="Anggi Puspita"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Anggi Puspita">Anggi Puspita</h1>
+
+            <p class="title">Web developer</p> <br>
+            <p class="title">Mobile developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:anggipuspita303@gmail.com" class="contact-link"
+                  >anggipuspita303@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">February 26, 2005</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Tamantirto, Kasihan, Bantul</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://id.linkedin.com/in/anggi-puspita-57b224249"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/anggii.ajaaa/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Mahasiswa program studi Teknologi Informasi semester 6 dengan
+              performa akademik dan kemampuan kerja sama tim yang baik. Memiliki
+              pengalaman dalam pembuatan website, khususnya website company
+              profile, menggunakan WordPress, Express.js, dan Laravel.
+            </p>
+
+            <p>
+              Menguasai beberapa bahasa pemrograman dan framework seperti HTML,
+              CSS, Node.js, Express.js, MySQL, Flutter, Laravel, serta platform
+              WordPress. Terbiasa bekerja dalam tim dan memiliki kemampuan
+              problem-solving yang baik.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Apa yang Saya Kerjakan</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="ikon desain"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Desain Web</h4>
+                  <p class="service-item-text">
+                    Mendesain tampilan antarmuka website yang modern, menarik,
+                    dan responsif untuk pengalaman pengguna yang optimal.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="ikon pengembangan web"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Pengembangan Web</h4>
+                  <p class="service-item-text">
+                    Membangun website yang fungsional dan dinamis menggunakan
+                    Laravel, Express.js, dan WordPress.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="ikon aplikasi mobile"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Aplikasi Mobile</h4>
+                  <p class="service-item-text">
+                    Mengembangkan aplikasi mobile berbasis Flutter untuk Android
+                    dengan desain antarmuka yang ramah pengguna.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Pendidikan</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Universitas Muhammadiyah Yogyakarta
+                </h4>
+
+                <span>2022 - Sekarang | IPK: 3.82 / 4.00</span>
+
+                <p class="timeline-text">
+                  Sarjana Teknologi Informasi. Mata kuliah relevan: Pemrograman
+                  Aplikasi Mobile Lanjut, Pemrograman Web Framework, Basis Data
+                  Awan.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Proyek</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sistem Pembelian Tiket Bioskop
+                </h4>
+
+                <span>Desember 2024 – Januari 2025 | Frontend Developer</span>
+
+                <p class="timeline-text">
+                  Tools: Express.js, Node.js, Bootstrap, HTML, JavaScript,
+                  CSS.<br />
+                  Mendesain dan mengembangkan UI halaman user dan admin,
+                  termasuk fitur pemesanan tiket, manajemen pengguna, dan
+                  manajemen film.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sistem Aplikasi Manajemen Kursus Online
+                </h4>
+
+                <span>Desember 2024 – Januari 2025 | Full Stack Developer</span>
+
+                <p class="timeline-text">
+                  Tools: Kotlin, MySQL.<br />
+                  Mengembangkan backend dan database serta merancang UI yang
+                  sederhana dan user-friendly.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sistem Pelaporan Kerusakan Fasilitas Publik (TilikDesa)
+                </h4>
+
+                <span>Juni – Juli 2025 | Full Stack Developer</span>
+
+                <p class="timeline-text">
+                  Tools: Laravel, Flutter, MySQL.<br />
+                  Membangun backend dengan Laravel, mengembangkan aplikasi
+                  mobile Flutter, dan merancang alur pelaporan yang efisien.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Keterampilan Teknis</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web developer</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Mobile developer</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Mobile development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Wordpress</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Mobile development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Wordpress</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="WordPress"
+              >
+                <a href="https://www.rentransindo.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Rentransindo.png"
+                      alt="Rentransindo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Rentransindo</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/ranara.png"
+                      alt="Sistem Pemesanan tiket bioskop"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Sistem Pemesanan tiket bioskop</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="WordPress"
+              >
+                <a href="https://www.pesona-argabuwana.site/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/PesonaArga.png"
+                      alt="Pesona Arga Buwana"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Pesona Arga Buwana</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="WordPress"
+              >
+                <a href="https://www.bricksdigital.id/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Bricks.png"
+                      alt="Bricks Digital"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Bricks Digital</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/gor.png"
+                      alt="Sistem Reservasi Lapangan GOR Jaya Abadi"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Sistem Reservasi Lapangan GOR Jaya Abadi</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://www.markettown2024.site/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/MarketTown.png"
+                      alt="Market Town"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Market Town</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://seributouris.site/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Seributourism.png"
+                      alt="Seributourism"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Seributourism</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://lebakmuncang.site/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/LebakMuncang.png"
+                      alt="Lebak Muncang Tourism Village"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Lebak Muncang Tourism Village</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://grahaalamnusantara.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/GrahaAlam.png"
+                      alt="GrahaAlam"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">PT. Graha Alam Nusantara</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://kabukisurabaya.my.id/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Kabuki.png"
+                      alt="Kabuki"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Kabuki & Naftali autoshop surabaya
+                  </h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://normanpool.site/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/NormanPoll.png"
+                      alt="Normanpool"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Normanpool</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Wordpress"
+              >
+                <a href="https://hanggar17.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Hanggar17.png"
+                      alt="Hanggar17"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Hanggar17</h3>
+
+                  <p class="project-category">Wordpress</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Mobile development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/mobile.png"
+                      alt="Sistem Aplikasi Manajemen Kursus Online"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Sistem Aplikasi Manajemen Kursus Online
+                  </h3>
+
+                  <p class="project-category">Mobile Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Mobile development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/tilikdesa.jpg"
+                      alt="Sistem Pelaporan Kerusakan Fasilitas Publik (TilikDesa)"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Sistem Pelaporan Kerusakan Fasilitas Publik (TilikDesa)
+                  </h3>
+
+                  <p class="project-category">Mobile Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.7886197901075!2d110.31807287481867!3d-7.812187092208319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af9e4bdf6deb3%3A0x5ad86b16cd48a366!2sKost%20Putri%20Pak%20Suradi!5e0!3m2!1sid!2sid!4v1752220893422!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Kirim Pesan</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
